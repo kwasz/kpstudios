@@ -1,0 +1,663 @@
+/* ======================= ШРИФТЫ ======================= */
+
+/* HANDJET — только нужные веса (чтобы браузер не запутался) */
+@font-face {
+    font-family: 'Handjet';
+    src: url('fonts/Handjet-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Handjet';
+    src: url('fonts/Handjet-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Handjet';
+    src: url('fonts/Handjet-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Handjet';
+    src: url('fonts/Handjet-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Handjet';
+    src: url('fonts/Handjet-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PRESSSTART2P — для больших заголовков */
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ======================= ОСНОВНЫЕ СТИЛИ ======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Логотип */
+header .logo {
+    font-family: 'Handjet';
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+/* PressStart2P только для больших выделенных текстов */
+.hero-info h1,
+.trend h3,
+.TextCenter h1,
+.presentaish h3,
+.projects h2,
+.loop h2,
+.newGradient h3 {
+    font-family: 'PressStart2P', sans-serif !important;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Немного подгоняем размер, т.к. PressStart2P выглядит лучше крупнее */
+.hero-info h1 { font-size: 48px; }
+.trend h3 { font-size: 29px; }
+/* ======================= ОСНОВНЫЕ СТИЛИ ======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Логотип — оставляем Handjet (он лучше смотрится) */
+header .logo {
+    font-family: 'Handjet';
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+/* ======================= PRESSSTART2P ДЛЯ БОЛЬШИХ ВЫДЕЛЕННЫХ ТЕКСТОВ ======================= */
+.hero-info h1,
+.trend h3,
+.TextCenter h1,
+.presentaish h3,
+.projects h2,
+.loop h2,
+.newGradient h3 {
+    font-family: 'PressStart2P', sans-serif !important;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Дополнительно можно увеличить размер заголовков, т.к. PressStart2P выглядит лучше крупнее */
+.hero-info h1 { font-size: 48px; }
+.trend h3 { font-size: 29px; }
+.projects h2 { font-size: 31px; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Handjet", sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ======================= ОБЩИЕ СЕКЦИИ ======================= */
+
+.gradient {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(92,44,0,1) 100%);
+    width: 100%;
+}
+
+.newGradient {
+    background: url(Presentaihn.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 90px 0;
+}
+
+.box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======================= HEADER ======================= */
+
+header {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo {
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li:not(.button) a:hover {
+    border-bottom: 3px solid rgba(220, 112, 0, 1);
+    padding-bottom: 2px;
+}
+
+header nav ul li.button a {
+    background: rgba(220, 112, 0, 1);
+    padding: 9px 25px;
+    border-radius: 6px;
+    transition: all 600ms ease;
+    font-weight: 600;
+}
+
+header nav ul li.button a:hover {
+    background: rgb(255, 133, 4);
+    transform: scale(1.05);
+}
+
+/* ======================= HERO ======================= */
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+}
+
+.hero-info {
+    width: 100%;
+    max-width: 520px;
+    padding-top: 80px;
+}
+
+.hero-info h2 {
+    color: #E87D0E;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-info h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-info p {
+    margin: 35px 0 40px;
+    font-size: 24px;
+}
+
+.hero-info button {
+    background: linear-gradient(180deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 100%);
+    padding: 14px 32px;
+    border-radius: 40px;
+    border: 0;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.hero-info button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(250, 131, 5, 0.4);
+}
+
+.hero img {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+    z-index: 1;
+    width: 620px;
+    max-width: none;
+}
+
+/* ======================= TRENDING ======================= */
+
+.trend {
+    padding: 100px 0 80px;
+    overflow-x: auto;
+}
+
+.trend h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.trend .see {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 28px;
+    background-color: #444;
+    float: right;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.trend .see:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+.trend .games {
+    display: flex;
+    justify-content: space-between; /* центрируем сетку по горизонтали */
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.trend .games .block {
+    flex: 1;
+    min-width: 260px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.trend .games .block h4{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.trend .games .block:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.trend .games .block img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom-left-radius: 12px;  /* закругление левого нижнего угла */
+    border-bottom-right-radius: 12px; /* закругление правого нижнего угла */
+    display: block;                   /* чтобы убрать лишний отступ снизу */
+}
+.trend .games .block span img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.trend .games span {
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 0 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.trend .games span img {
+    top: 4px;
+    margin-right: 6px;
+}
+
+/* ======================= TEXTCENTER ======================= */
+
+.TextCenter {
+    padding: 60px 0;
+}
+
+.TextCenter h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ======================= PRESENTAISH ======================= */
+
+.presentaish {
+    padding-bottom: 80px;
+}
+
+.presentaish h3 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.presentaish p {
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.presentaish img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ======================= NEWGRADIENT (УСЛУГИ) ======================= */
+
+.newGradient h3,
+.newGradient p {
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.newGradient p {
+    font-size: 24px;
+}
+
+.newGradient h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.newGradient .info {
+    display: grid;
+    grid-template-columns: repeat(3, 180px); /* 3 колонки по 180px */
+    justify-content: center; /* центрируем сетку по горизонтали */
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.newGradient .info .block {
+    text-align: center;
+    width: 180px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 12px;
+    padding: 25px 15px;
+    transition: all 0.4s ease;
+}
+
+.newGradient .info .block:hover {
+    transform: scale(1.08);
+    background: rgba(220, 112, 0, 0.2);
+}
+
+.newGradient .info .block img:first-child {
+    width: 90px;
+    margin: 0 auto 15px;
+}
+
+.newGradient .info .block img{
+    margin: 0 auto 0;
+}
+
+.newGradient .info .block p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+/* ======================= PROJECTS ======================= */
+
+.projects {
+    padding: 100px 0 60px;
+}
+
+.projects .TextCenter {
+    margin-bottom: 60px;
+}
+
+.projects .TextCenter h2 {
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.projects .TextCenter p {
+    font-size: 24px;
+    margin: 15px auto 0;
+}
+
+.imges {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.img {
+    flex: 1;
+    min-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img img {
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* ======================= LOOP (ПОДПИСКА) ======================= */
+
+.loop {
+    padding: 80px 50px 120px;
+    gap: 80px;
+    background-color:#000000;
+}
+
+.loop h2 {
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 650px;
+}
+
+.loop p {
+    font-size: 24px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.registr {
+    text-align: left;
+    flex: 1;
+    max-width: 660px;
+}
+
+.registr h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.registr p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    max-width: 460px;
+}
+
+.registr form {
+    display: flex;
+    gap: 12px;
+}
+
+.registr input {
+    flex: 1;
+    padding: 16px 22px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    color: #222;
+    background: white;
+}
+
+.registr button {
+    padding: 16px 36px;
+    background: #DC7000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.registr button:hover {
+    background: #FF8504;
+    transform: scale(1.05);
+}
+
+/* ======================= АДАПТИВНОСТЬ ======================= */
+
+@media (max-width: 1200px) {
+    .hero img {
+        width: 500px;
+        right: -40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+    .hero img {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 40px auto 0;
+        width: 420px;
+    }
+    .hero-info {
+        max-width: 100%;
+        padding-top: 40px;
+    }
+    .trend .games {
+        justify-content: center;
+    }
+    /*.newGradient .info .block {
+        width: 45%;
+    }*/
+    .loop {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+    .hero-info h1 {
+        font-size: 38px;
+    }
+    .TextCenter h1 {
+        font-size: 28px;
+        margin: 40px 20px;
+    }
+    .projects .imges {
+        flex-direction: column;
+    }
+    .img {
+        min-width: 100%;
+    }
+    .newGradient .info .block {
+        width: 100%;
+    }
+}
+
+
+/* ======================= ДОПОЛНИТЕЛЬНЫЕ УЛУЧШЕНИЯ ======================= */
+
+.block {
+    transition: all 0.4s ease;
+}
+
+a.see {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+}
